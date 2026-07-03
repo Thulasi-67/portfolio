@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>K.Thulasi — Web Developer</title>
+<meta name="description" content="Portfolio of K.Thulasi, Computer Science Engineering student and web developer." />
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============ CANVAS STARFIELD BACKGROUND ============ -->
+<canvas id="starfield"></canvas>
+<div class="grain"></div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">🍀<span class="logo-dot"></span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <button id="theme-toggle" class="theme-toggle">
+    <i class="fa-solid fa-moon"></i>
+</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
+      <li><a href="#about"><i class="fa-solid fa-user-astronaut"></i>About</a></li>
+      <li><a href="#skills"><i class="fa-solid fa-satellite-dish"></i>Skills</a></li>
+      <li><a href="#projects"><i class="fa-solid fa-rocket"></i>Projects</a></li>
+      <li><a href="#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-left" data-aos="fade-right">
+      <p class="eyebrow"><span class="eyebrow-node"></span>Computer Science &amp; Engineering — 3rd Year</p>
+      <h1 class="hero-title">K. <span class="typing-target" id="typingTarget"></span></h1>
+      <p class="hero-tagline">Computer Science Engineering Student · Future Software Engineer · AI Enthusiast</p>
+
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-count="0">0</span>
+          <span class="stat-label">Innovation Award</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-count="9.16">0</span>
+          <span class="stat-label">CGPA</span>
+        </div>
+      </div>
+
+      <p class="hero-intro">I build clean, responsive interfaces and explore how AI can work even where the internet can't reach. Currently studying Computer Science &amp; Engineering at Mailam Engineering College, and shipping small projects that solve real problems for real people.</p>
+
+      <div class="hero-buttons">
+        <a href="Thulasi_Resume.pdf" download class="btn btn-primary">
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+        <a href="#projects" class="btn btn-ghost">
+          <i class="fa-solid fa-arrow-down-long"></i> Explore Portfolio
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-right" data-aos="fade-left">
+      <div class="orbit-frame">
+        <div class="orbit-ring ring-1"></div>
+        <div class="orbit-ring ring-2"></div>
+        <div class="orbit-ring ring-3"></div>
+        <span class="orbit-dot dot-a"></span>
+        <span class="orbit-dot dot-b"></span>
+        <span class="orbit-dot dot-c"></span>
+        <div class="profile-glow"></div>
+        <div class="profile-frame">
+          <!-- Profile photo: replace assets/profile.jpg with your own image to update -->
+          <img src="image/profile.jpeg" alt="K. Thulasi" class="profile-img" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll down">
+    <span></span>
+  </a>
+</header>
+
+<main>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <p class="section-eyebrow">01 — About</p>
+    <h2 class="section-title">The mission log</h2>
+
+    <div class="about-grid">
+      <div class="glass-card about-card" data-aos="fade-up">
+        <i class="fa-solid fa-graduation-cap card-icon"></i>
+        <h3>Education</h3>
+        <p><strong>B.E. Computer Science &amp; Engineering</strong><br>Mailam Engineering College · 2024 – 2028</br></p>
+        <p class="about-sub">HSC (12th) — Bonne Nehru Higher Secondary School, Villupuram · 2022 – 2024</p>
+      </div>
+
+      <div class="glass-card about-card" data-aos="fade-up">
+        <i class="fa-solid fa-bullseye card-icon"></i>
+        <h3>Career Goal</h3>
+        <p>To grow into a software engineer who builds practical, user-friendly products — starting as a fresher web developer, learning fast, and contributing real value from day one.</p>
+      </div>
+
+      <div class="glass-card about-card" data-aos="fade-up">
+        <i class="fa-solid fa-microchip card-icon"></i>
+        <h3>What Drives Me</h3>
+        <p>Software development, Artificial Intelligence, and web development — with a soft spot for taking something that seems complicated and making it feel simple to use.</p>
+      </div>
+
+      <div class="glass-card about-card" data-aos="fade-up">
+        <i class="fa-solid fa-puzzle-piece card-icon"></i>
+        <h3>How I Work</h3>
+        <p>I enjoy learning new technologies, solving problems methodically, and collaborating well in a team. I'm a quick learner who's happiest when a project moves from idea to something people can actually use.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <p class="section-eyebrow">02 — Skills</p>
+    <h2 class="section-title">Instruments &amp; readings</h2>
+    <p class="section-sub">A live systems check of the tools I navigate with.</p>
+
+    <div class="skills-grid">
+
+      <div class="skill-orbit" data-aos="zoom-in" data-percent="88">
+        <svg viewBox="0 0 120 120" class="skill-ring">
+          <circle cx="60" cy="60" r="52" class="ring-track"></circle>
+          <circle cx="60" cy="60" r="52" class="ring-fill"></circle>
+        </svg>
+        <div class="skill-info">
+          <span class="skill-percent">0%</span>
+          <span class="skill-name">HTML</span>
+        </div>
+      </div>
+
+      <div class="skill-orbit" data-aos="zoom-in" data-percent="85">
+        <svg viewBox="0 0 120 120" class="skill-ring">
+          <circle cx="60" cy="60" r="52" class="ring-track"></circle>
+          <circle cx="60" cy="60" r="52" class="ring-fill"></circle>
+        </svg>
+        <div class="skill-info">
+          <span class="skill-percent">0%</span>
+          <span class="skill-name">CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-orbit" data-aos="zoom-in" data-percent="70">
+        <svg viewBox="0 0 120 120" class="skill-ring">
+          <circle cx="60" cy="60" r="52" class="ring-track"></circle>
+          <circle cx="60" cy="60" r="52" class="ring-fill"></circle>
+        </svg>
+        <div class="skill-info">
+          <span class="skill-percent">0%</span>
+          <span class="skill-name">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="skill-orbit" data-aos="zoom-in" data-percent="55">
+        <svg viewBox="0 0 120 120" class="skill-ring">
+          <circle cx="60" cy="60" r="52" class="ring-track"></circle>
+          <circle cx="60" cy="60" r="52" class="ring-fill"></circle>
+        </svg>
+        <div class="skill-info">
+          <span class="skill-percent">0%</span>
+          <span class="skill-name">Python</span>
+        </div>
+      </div>
+
+      <div class="skill-orbit" data-aos="zoom-in" data-percent="50">
+        <svg viewBox="0 0 120 120" class="skill-ring">
+          <circle cx="60" cy="60" r="52" class="ring-track"></circle>
+          <circle cx="60" cy="60" r="52" class="ring-fill"></circle>
+        </svg>
+        <div class="skill-info">
+          <span class="skill-percent">0%</span>
+          <span class="skill-name">Java</span>
+        </div>
+      </div>
+
+      <div class="skill-orbit" data-aos="zoom-in" data-percent="45">
+        <svg viewBox="0 0 120 120" class="skill-ring">
+          <circle cx="60" cy="60" r="52" class="ring-track"></circle>
+          <circle cx="60" cy="60" r="52" class="ring-fill"></circle>
+        </svg>
+        <div class="skill-info">
+          <span class="skill-percent">0%</span>
+          <span class="skill-name">C</span>
+        </div>
+      </div>
+
+      <div class="skill-orbit" data-aos="zoom-in" data-percent="60">
+        <svg viewBox="0 0 120 120" class="skill-ring">
+          <circle cx="60" cy="60" r="52" class="ring-track"></circle>
+          <circle cx="60" cy="60" r="52" class="ring-fill"></circle>
+        </svg>
+        <div class="skill-info">
+          <span class="skill-percent">0%</span>
+          <span class="skill-name">SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-orbit" data-aos="zoom-in" data-percent="78">
+        <svg viewBox="0 0 120 120" class="skill-ring">
+          <circle cx="60" cy="60" r="52" class="ring-track"></circle>
+          <circle cx="60" cy="60" r="52" class="ring-fill"></circle>
+        </svg>
+        <div class="skill-info">
+          <span class="skill-percent">0%</span>
+          <span class="skill-name">Figma</span>
+        </div>
+      </div>
+
+      <div class="skill-orbit" data-aos="zoom-in" data-percent="65">
+        <svg viewBox="0 0 120 120" class="skill-ring">
+          <circle cx="60" cy="60" r="52" class="ring-track"></circle>
+          <circle cx="60" cy="60" r="52" class="ring-fill"></circle>
+        </svg>
+        <div class="skill-info">
+          <span class="skill-percent">0%</span>
+          <span class="skill-name">Git</span>
+        </div>
+      </div>
+
+      <div class="skill-orbit" data-aos="zoom-in" data-percent="72">
+        <svg viewBox="0 0 120 120" class="skill-ring">
+          <circle cx="60" cy="60" r="52" class="ring-track"></circle>
+          <circle cx="60" cy="60" r="52" class="ring-fill"></circle>
+        </svg>
+        <div class="skill-info">
+          <span class="skill-percent">0%</span>
+          <span class="skill-name">AI Prompting</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <p class="section-eyebrow">03 — Projects</p>
+    <h2 class="section-title">Mission archive</h2>
+    <p class="section-sub">Three builds, three different problems worth solving.</p>
+
+    <div class="projects-grid">
+
+      <article class="project-card glass-card" data-aos="fade-up">
+        <div class="project-media">
+          <!-- Project image: replace assets/project-ai-assistant.jpg -->
+          <img src="image/project1.jpeg" alt="tulasi" />
+          <span class="project-tag">Featured</span>
+        </div>
+        <div class="project-body">
+          <h3>Offline AI Assistant</h3>
+          <p>A question-answer assistant that works with zero internet connection, using pre-stored data and lightweight algorithms — built for fast responses and a friendly interface, powered locally on-device.</p>
+          <div class="tech-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Core Logic</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-small btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Project</a>
+            <a href="#" class="btn btn-small btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass-card" data-aos="fade-up">
+        <div class="project-media">
+          <!-- Project image: replace assets/project-agri.jpg -->
+          <img src="image/project2.jpeg" alt="tulasi" />
+          <span class="project-tag">Award-Winning</span>
+        </div>
+        <div class="project-body">
+          <h3>Agriculture Weather Detection System</h3>
+          <p>A smart irrigation model that reads sensor data to control water flow automatically, cutting down water wastage for farmers — paired with weather alerts and crop health monitoring. Won an innovation award at a technical competition.</p>
+          <div class="tech-tags">
+            <span>Sensors</span><span>Automation</span><span>UI Design</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-small btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Project</a>
+            <a href="#" class="btn btn-small btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass-card" data-aos="fade-up">
+        <div class="project-media">
+          <!-- Project image: replace assets/project-restaurant.jpg -->
+          <img src="image/project3.jpeg" alt="tulasi" />
+          <span class="project-tag">Figma</span>
+        </div>
+        <div class="project-body">
+          <h3>Restaurant Website Design</h3>
+          <p>A modern, responsive restaurant website layout designed end-to-end in Figma — home, menu, about, and contact pages — with consistent colour, typography, and components for an easy developer handoff.</p>
+          <div class="tech-tags">
+            <span>Figma</span><span>UI/UX</span><span>Design System</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-small btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Project</a>
+            <a href="#" class="btn btn-small btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <p class="section-eyebrow">04 — Contact</p>
+    <h2 class="section-title">Open a channel</h2>
+    <p class="section-sub">Have a role, a project, or just want to say hello? I'd love to hear from you.</p>
+
+    <div class="contact-grid">
+      <form class="contact-form glass-card" data-aos="fade-right" id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="from_name" placeholder="Your full name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="from_email" placeholder="you@example.com" required />
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter Subject" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="from_message" rows="5" placeholder="Tell me a little about what you have in mind..." required></textarea>
+
+        <button type="submit" class="btn btn-primary btn-full">
+          <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+        </button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+
+      <div class="contact-cards" data-aos="fade-left">
+        <a href="tel:7292361867" class="contact-card">
+          <i class="fa-solid fa-phone"></i>
+          <div><span>Phone</span><p>+91 72923 61867</p></div>
+        </a>
+        <a href="mailto:thulasimoorthy2007@gmail.com" class="contact-card">
+          <i class="fa-solid fa-envelope"></i>
+          <div><span>Email</span><p>thulasimoorthy2007@gmail.com</p></div>
+        </a>
+        <a href="https://linkedin.com/in/kthulasi" target="_blank" class="contact-card">
+          <i class="fa-brands fa-linkedin"></i>
+          <div><span>LinkedIn</span><p>linkedin.com/in/kthulasi</p></div>
+        </a>
+        <a href="https://github.com/kthulasi" target="_blank" class="contact-card">
+          <i class="fa-brands fa-github"></i>
+          <div><span>GitHub</span><p>github.com/kthulasi</p></div>
+        </a>
+        <div class="contact-card contact-card-static">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><span>Location</span><p>Pondy Main Road, Villupuram</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p>&copy; <span id="year"></span> K.Thulasi. All rights reserved.</p>
+    <p class="footer-credit">Designed &amp; Developed by K.Thulasi</p>
+    <p class="visitor-count">
+     Visitors: <span id="visitorCount">Loading...</span></p>
+    <div class="footer-socials">
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:thulasimoorthy2007@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/917292361867"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener noreferrer  
+   aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+<script src="script.js"></script>
+</body>
+</html>
