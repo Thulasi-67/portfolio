@@ -943,6 +943,21 @@ body.light-mode .nav-links a i {
 body.light-mode .nav-toggle span {
     background: #111827;
 }
+/* ===========================
+   LIGHT MODE FIX
+=========================== */
+
+body.light-mode .btn-ghost{
+    background: #ffffff;
+    color: #1f2937;
+    border: 2px solid #5b8def;
+}
+
+body.light-mode .btn-ghost:hover{
+    background: #5b8def;
+    color: #ffffff;
+}
+
 /* ==========================
    WhatsApp Floating Button
 ========================== */
@@ -1131,18 +1146,4 @@ body.light-mode .nav-logo{
     text-shadow:
         0 0 8px rgba(212,175,55,.8);
 
-}
-/* ===========================
-   LIGHT MODE FIX
-=========================== */
-
-body.light-mode .btn-ghost{
-    background: #ffffff;
-    color: #1f2937;
-    border: 2px solid #5b8def;
-}
-
-body.light-mode .btn-ghost:hover{
-    background: #5b8def;
-    color: #ffffff;
 }
